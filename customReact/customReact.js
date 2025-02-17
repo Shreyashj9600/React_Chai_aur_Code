@@ -12,9 +12,31 @@ const reactElement = {
         href: 'https://www.google.com/',
         target: '_blank'
     },
-    children: 'click me to visit google'
+    children: 'click me to visit google',
+    city : 'mumbai'
 }
 
 const maincontainer = document.getElementById('root')
 
 customRender(reactElement, maincontainer)
+
+
+// test 
+
+// function customRender(reactElement, container) {
+//     let domElement = document.createElement(reactElement.type)
+//     domElement.innerHTML = reactElement.props.Text
+//     container.appendChild(domElement)
+
+// }
+
+// const reactElement = {
+//     type: 'h1',
+//     props: {
+//         "Text": 'Test custom React app'
+//     }
+// }
+
+// const maincontainer = document.getElementById('root')
+
+// customRender(reactElement, maincontainer)
